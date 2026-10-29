@@ -1,0 +1,26 @@
+name: Build and correctness
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  checks:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen inputs
+        run: python3 tools/prepare_final_benchmark.py --verify
+      - name: Build benchmark worker
+        run: make -f benchmark.mk -j2
+      - name: C++ correctness checks
+        run: make test -j2
+      - name: Runner checks
+        run: python3 tests/benchmark_runner_tests.py
+      - name: Team controller checks
+        run: python3 tests/team_benchmark_tests.py

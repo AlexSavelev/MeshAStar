@@ -1,0 +1,13 @@
+series,engine,variant,runs,solved,exhausted,timeout,error,invalid_path,reference_unknown
+paper,LBA,safe-euclidean,1440,1191,238,11,0,0,0
+paper,LBA,max,1440,1191,233,16,0,0,0
+paper,LBA,directional,1440,1191,233,16,0,0,0
+paper,Mesh,safe-euclidean,1440,1191,249,0,0,0,0
+paper,Mesh,max,1440,1191,249,0,0,0,0
+paper,Mesh,directional,1440,1191,249,0,0,0,0
+extension,LBA,safe-euclidean,1440,1161,279,0,0,0,0
+extension,LBA,max,1440,1161,276,3,0,0,0
+extension,LBA,directional,1440,1161,276,3,0,0,0
+extension,Mesh,safe-euclidean,1440,1161,279,0,0,0,0
+extension,Mesh,max,1440,1161,279,0,0,0,0
+extension,Mesh,directional,1440,1161,279,0,0,0,0

@@ -1,0 +1,56 @@
+# Local builds and generated output
+/obj/
+/build-benchmark/
+/mesh_astar
+/results/
+/build/
+/dist/
+*.o
+*.dSYM/
+*.log
+
+# Python / notebooks / editor state
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+.env
+.env.*
+!.env.example
+
+# Local research diary and upstream presentation assets
+/PROJECT_STATE.md
+/media/
+
+# Keep frozen benchmark INPUTS, not generated runs or source snapshots.
+/res/*
+!/res/final-benchmark-v1/
+!/res/additive-experiment/
+/res/additive-experiment/*
+!/res/additive-experiment/tasks.tsv
+!/res/alpha-experiment/
+/res/alpha-experiment/*
+!/res/alpha-experiment/tasks.tsv
+!/res/case-study/
+/res/case-study/*
+!/res/case-study/tasks.tsv
+!/res/directional-case-study/
+/res/directional-case-study/*
+!/res/directional-case-study/tasks.tsv
+!/res/directional-experiment/
+/res/directional-experiment/*
+!/res/directional-experiment/tasks.tsv
+!/res/directional-holdout/
+/res/directional-holdout/*
+!/res/directional-holdout/tasks.tsv
+!/res/multimap-experiment/
+/res/multimap-experiment/*
+!/res/multimap-experiment/tasks.tsv
+!/res/search-structure-experiment/
+/res/search-structure-experiment/*
+!/res/search-structure-experiment/tasks.tsv

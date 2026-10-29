@@ -1,0 +1,3 @@
+# Preserve exact input bytes: benchmark manifests contain SHA-256 hashes.
+* -text
+*.ipynb linguist-vendored

@@ -1,0 +1,146 @@
+{
+  "stages": [
+    {
+      "series": "paper",
+      "rows": 9120,
+      "status": {
+        "solved": 7543,
+        "exhausted_unreachable": 1534,
+        "timeout": 43
+      },
+      "validation": {
+        "reference_run": 480,
+        "pass": 8597,
+        "not_completed": 43
+      },
+      "last_write_moscow": "2026-10-27T21:58:14.834603+03:00",
+      "repeat_disagreements": 0
+    },
+    {
+      "series": "extension",
+      "rows": 9120,
+      "status": {
+        "solved": 7353,
+        "exhausted_unreachable": 1761,
+        "timeout": 6
+      },
+      "validation": {
+        "reference_run": 480,
+        "pass": 8634,
+        "not_completed": 6
+      },
+      "last_write_moscow": "2026-10-27T21:58:15.113864+03:00",
+      "repeat_disagreements": 0
+    }
+  ],
+  "reference_status": {
+    "solved": 784,
+    "exhausted_unreachable": 176
+  },
+  "invalid_path_runs": 0,
+  "invalid_path_tasks": 0,
+  "invalid_references": 0,
+  "geometry_bad": 0,
+  "max_float_accumulation_difference": 0.0018259286880493164,
+  "max_double_path_cost_difference_vs_reference": 5.137920379638672e-05,
+  "recorded_interference_rows": 98,
+  "excluded_task_engines": 7,
+  "repeat_sensitivity": [
+    {
+      "engine": "LBA",
+      "outcome": "all_completed",
+      "repeat": 1,
+      "grid_speedup": 1.6096374218635925,
+      "directional_speedup": 1.0364374388634316
+    },
+    {
+      "engine": "LBA",
+      "outcome": "all_completed",
+      "repeat": 2,
+      "grid_speedup": 1.6095230630964135,
+      "directional_speedup": 1.0349958502847947
+    },
+    {
+      "engine": "LBA",
+      "outcome": "solved",
+      "repeat": 1,
+      "grid_speedup": 2.0150140190575354,
+      "directional_speedup": 1.0851110846705836
+    },
+    {
+      "engine": "LBA",
+      "outcome": "solved",
+      "repeat": 2,
+      "grid_speedup": 2.0127445112478095,
+      "directional_speedup": 1.0867613095043653
+    },
+    {
+      "engine": "Mesh",
+      "outcome": "all_completed",
+      "repeat": 1,
+      "grid_speedup": 1.4660240126785862,
+      "directional_speedup": 0.9580243522188877
+    },
+    {
+      "engine": "Mesh",
+      "outcome": "all_completed",
+      "repeat": 2,
+      "grid_speedup": 1.4625876100928699,
+      "directional_speedup": 0.9553785018397273
+    },
+    {
+      "engine": "Mesh",
+      "outcome": "solved",
+      "repeat": 1,
+      "grid_speedup": 2.083293396363479,
+      "directional_speedup": 1.0255451400486322
+    },
+    {
+      "engine": "Mesh",
+      "outcome": "solved",
+      "repeat": 2,
+      "grid_speedup": 2.0786653802307633,
+      "directional_speedup": 1.0232566529259493
+    }
+  ],
+  "timeout_tasks": [
+    {
+      "task": "Labyrinth-long-03",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "Labyrinth-long-08",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "Labyrinth-long-29",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "Labyrinth-long-31",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "Labyrinth-long-33",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "Labyrinth-middle-25",
+      "reference_status": "exhausted_unreachable"
+    },
+    {
+      "task": "WheelofWar-long-12",
+      "reference_status": "exhausted_unreachable"
+    }
+  ],
+  "main_policy": "All 9 runs/task/engine must PASS and costs agree within 0.001. Remove whole three-variant repeat if any is in recorded CPU-interference interval; require >=2 clean repeats. Per-task median full solve time; ratio of sums across tasks. Original logs unchanged.",
+  "validation_policy": "float-replay-v1 (derived logs)",
+  "source_sha256": {
+    "res/numeric-validation-2026-10-27/full-paper/runs.jsonl": "d5c5cc402a4fd1690db9caac6355627192c728610d1a4678a57481927aae64a7",
+    "res/full-run-2026-10-27/mesha-team-benchmark/results/full-paper/metadata.json": "6fa5c9f971cc537d465103df82223e3e835bc2a99aa02c8c96aa2385733378b9",
+    "res/numeric-validation-2026-10-27/full-extension/runs.jsonl": "955c47a97702bdd05119a1a7c7398842fde44845fbd8daa31e3cbd2634728b95",
+    "res/full-run-2026-10-27/mesha-team-benchmark/results/full-extension/metadata.json": "0e0b30a91f92531363b7dc3f20978e7a4c107e079ee96202db46d93599b88e5a",
+    "res/directional-nonempty/interference.json": "ff845e4d6e08813122e422687fe3bc268a7ef7bc26550be1e025661ec9d7b501"
+  },
+  "analysis_sha256": "c8c02331e9c69b6a72dd38f34fb8342aad8cab35f4e796e2379b4f7d92d7d956"
+}
